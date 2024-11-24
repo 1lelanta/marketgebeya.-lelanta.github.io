@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Gebeya Market</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/cart.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Asset/image.png" alt="Logo">
+        </div>
+        <nav class="navigation">
+            <div class="user-options">
+                <button class="dropdown">Register/Sign In</button>
+                <div class="dropdown-content">
+                    <a href="#">Register</a>
+                    <a href="#">Sign In</a>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li class="dropdown">
+                    <a href="#">More</a>
+                    <div class="dropdown-content">
+                        <a href="#">Perfumes</a>
+                        <a href="#">Jewelries</a>
+                        <a href="#">Gym wears</a>
+                        <a href="#">Vintage wears</a>
+                        <a href="#">Sport wear</a>
+                        <a href="#">Pyjamas</a>
+                        <a href="#">Slippers</a>
+                    </div>
+                </li>
+                <li><a href="cart.html"><i class="fa fa-shopping-bag" aria-hidden="true" id="cart-icon"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="cart-container">
+            <div class="cart-row">
+                <div class="cart-left-box">
+                    <div class="burberry-container">
+                        <h1 class="cart-title">Burberry Shine</h1>
+                        <div class="image-wrapper">
+                            <i class="fas fa-heart heart-icon"></i>
+                            <span class="in-stock">In Stock</span>
+                            <img src="Asset/Pictures/burberry-shine.png" alt="Burberry Shine" class="burberry-image">
+                        </div>
+                        <div class="small-shoes">
+                            <img src="">
+                            <img src="">
+                            <img src="">
+                            <img src="">
+                            <p>Share this product</p>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <i class="fab fa-instagram" style="font-size: 24px; color: #E1306C;"></i>
+                            </a>
+                            <a href="https://www.whatsapp.com/" target="_blank">
+                                <i class="fab fa-whatsapp" style="font-size: 24px; color: #25D366;"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank">
+                                <i class="fab fa-twitter" style="font-size: 24px; color: #1DA1F2;"></i>
+                            </a>
+                            <div class="quantity-controls">
+                                <button class="quantity-btn" onclick="changeQuantity(-1)">-</button>
+                                <span id="quantity-display">1</span>
+                                <button class="quantity-btn" onclick="changeQuantity(1)">+</button>
+                            </div>
+                            <div class="size-selection">
+                                <span class="size-text">Size:</span>
+                                <div class="size-boxes">
+                                    <div class="size-box">20</div>
+                                    <div class="size-box">25</div>
+                                    <div class="size-box">32</div>
+                                    <div class="size-box">37</div>
+                                </div>
+                                <span class="size-guide-link"><a href="#">See All Size Guide</a></span>
+                            </div>
+                            <div class="color-selection">
+                                <span class="color-text">Color:</span>
+                                <div class="color-boxes">
+                                    <div class="color-box" style="background-color: #ff0000;"></div>
+                                    <div class="color-box" style="background-color: #00ff00;"></div>
+                                    <div class="color-box" style="background-color: #0000ff;"></div>
+                                    <div class="color-box" style="background-color: #ffff00;"></div>
+                                </div>
+                            </div>
+                            <div class="action-buttons">
+                                <button class="btn add-to-cart">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+                                <button class="btn buy-now" onclick="window.location.href='checkout/index.html';">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cart-right-box">
+                    <h2 class="delivery-title">Delivery and Returns</h2>
+                    <div class="delivery-returns-container">
+                        <div class="input-box">
+                            <textarea placeholder="Location"></textarea>
+                            <textarea placeholder="Sublocation"></textarea>
+                        </div>
+                        <div class="icon-box">
+                            <div class="icon-section">
+                                <i class="fa fa-truck"></i>
+                                <p>Delivery</p>
+                                <p class="small-text">Get your items delivered quickly to your location.</p>
+                            </div>
+                            <div class="icon-section">
+                                <i class="fa fa-undo"></i>
+                                <p>Returns</p>
+                                <p class="small-text">Free returns within 30 days for all items.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-info-box">
+            <div class="tabs">
+                <button class="tab-btn active" onclick="showTab('overview')">Overview</button>
+                <button class="tab-btn" onclick="showTab('description')">Description</button>
+                <button class="tab-btn" onclick="showTab('warranty')">Warranty</button>
+                <button class="tab-btn" onclick="showTab('reviews')">Reviews</button>
+            </div>
+            <div class="tab-content">
+                <div id="overview" class="tab-panel active">
+                    <ul>
+                        <li>Available in a wide range of colors, patterns, and patterns and themes to appeal to kids</li>
+                        <li>Rubber outsoles with good traction to prevent slips and falls.</li>
+                        <li>Built-in arch support to help maintain healthy foot development.</li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div id="description" class="tab-panel">
+                    <li>This is the description of the product.</li>
+                </div>
+                <div id="warranty" class="tab-panel">
+                    <li>This is the warranty information.</li>
+                </div>
+                <div id="reviews" class="tab-panel">
+                    <li>This is the reviews section.</li>
+                </div>
+            </div>
+        </div>
+
+        <div class="similar-items">
+            <h2>Similar Items You May Like</h2>
+            <div class="similar-images">
+                <img src="Asset/Pictures/similar1.png" alt="Similar Item 1" class="similar-image">
+                <img src="Asset/Pictures/similar2.png" alt="Similar Item 2" class="similar-image">
+                <!-- Add more similar items as necessary -->
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

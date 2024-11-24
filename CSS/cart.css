@@ -1,0 +1,221 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.cart-container {
+  
+  
+}
+
+.cart-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.cart-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.cart-left-box, .cart-right-box {
+  flex: 1;
+}
+
+.cart-left-box .burberry-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cart-left-box .burberry-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.image-wrapper {
+  width: 321px;
+  height: 323px;
+  border-radius: 16px;
+  background: #F2F2F2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-left-box .quantity-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.cart-left-box .quantity-btn {
+  padding: 5px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cart-left-box .quantity-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+.cart-right-box {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cart-right-box .icon-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.cart-right-box .icon-section i {
+  font-size: 24px;
+  color: #007bff;
+}
+
+.product-info-box {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  background-color: #ddd;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border-radius: 4px;
+}
+
+.tab-btn.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.tab-btn:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+.tab-panel {
+  display: none;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+.similar-items {
+  margin-top: 40px;
+}
+
+.similar-images {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.similar-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Button Styles */
+.action-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Buy Now Button */
+.btn.buy-now {
+  background-color: #ff5722;
+  color: #ffffff;
+}
+
+.btn.buy-now:hover {
+  background-color: #e64a19;
+  transform: scale(1.1);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Add to Cart Button */
+.btn.add-to-cart {
+  background-color: #4caf50;
+  color: #ffffff;
+}
+
+.btn.add-to-cart:hover {
+  background-color: #388e3c;
+  transform: scale(1.1);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .cart-container {
+      width: 100%;
+      padding: 15px;
+  }
+
+  .cart-row {
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .btn {
+      padding: 10px 20px;
+      font-size: 14px;
+  }
+
+  .action-buttons {
+      flex-direction: column;
+      gap: 10px;
+  }
+}

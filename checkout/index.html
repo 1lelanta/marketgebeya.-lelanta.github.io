@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="checkout-row">
+      <!-- Shipping Address -->
+      <div class="shipping-address">
+        <h2>Shipping Address</h2>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label for="address1">Address 1</label>
+          <input type="text" id="address1" placeholder="Enter address line 1">
+        </div>
+        <div class="form-group">
+          <label for="address2">Address 2</label>
+          <input type="text" id="address2" placeholder="Enter address line 2">
+        </div>
+        <div class="row">
+          <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" id="city" placeholder="Enter city">
+          </div>
+          <div class="form-group">
+            <label for="state">State</label>
+            <input type="text" id="state" placeholder="Enter state">
+          </div>
+          <div class="form-group">
+            <label for="zip">ZIP</label>
+            <input type="text" id="zip" placeholder="Enter ZIP code">
+          </div>
+        </div>
+      </div>
+
+      <!-- Order Summary -->
+      <div class="order-summary">
+        <h2>Order Summary</h2>
+        <img src="https://via.placeholder.com/150" alt="Product Image" class="product-image">
+        <div class="summary-details">
+          <p><strong>Subtotal:</strong> $150</p>
+          <p><strong>Shipping:</strong> $10</p>
+          <p><strong>Tax:</strong> $5</p>
+          <p><strong>Total:</strong> $165</p>
+        </div>
+        <button id="place-order-btn">Place Order</button>
+      </div>
+    </div>
+
+    <!-- Payment Method -->
+    <div style="margin-top: 30px;">
+      <h2>Payment Method</h2>
+      <div class="button-group">
+        <button class="payment-btn card" data-method="Card">Card</button>
+        <button class="payment-btn wallet" data-method="Wallet">Wallet</button>
+        <button class="payment-btn transfer" data-method="Transfer">Transfer</button>
+      </div>
+      <div class="form-group" style="margin-top: 20px;">
+        <label for="card-name">Name on Card</label>
+        <input type="text" id="card-name" placeholder="Enter name on card">
+      </div>
+      <div class="form-group">
+        <label for="card-number">Card Number</label>
+        <input type="text" id="card-number" placeholder="Enter card number">
+      </div>
+      <div class="row">
+        <div class="form-group">
+          <label for="expiry">Expiry Date</label>
+          <input type="text" id="expiry" placeholder="MM/YY">
+        </div>
+        <div class="form-group">
+          <label for="cvv">CVV</label>
+          <input type="text" id="cvv" placeholder="123">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
